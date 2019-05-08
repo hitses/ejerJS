@@ -1,9 +1,14 @@
 /* Triángulo con bucles for anidados */
 
-for(var i = 0; i < 10; i+=2){
+var filas = 7;
+
+for(var altura = 1; altura <= filas; altura++){
   var cadena = [];
-  for(var j = 1; j < i; j++){
-    cadena += '*';
-  }
+  for(var blancos = 1; blancos <= filas - altura; blancos++){
+    cadena += " ";
+  };
+  for(var asteriscos = 1; asteriscos <= (altura * 2) - 1; asteriscos++){
+    cadena += "*";
+  };
   console.log(cadena);
 };
