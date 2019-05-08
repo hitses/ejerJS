@@ -1,7 +1,10 @@
-var i = 10;
+var edad = Math.floor(Math.random() * 100) + 1;
 
-while(i < 18){
-  console.log('Aún eres menor de edad. Tienes ' + i + ' Espera un año más.');
-  i++;
-}
-console.log('¡Bien! ¡Ya tienes ' + i + ' años!');
+while(edad < 18){
+  if(edad < 18){
+    console.log('Tienes', edad, 'años. Crece un poco más para poder continuar.');
+    var edad = Math.floor(Math.random() * 100) + 1;
+  }
+};
+
+console.log('Bien. Ahora que tienes', edad, 'años sí puedes continuar');
