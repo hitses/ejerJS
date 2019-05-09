@@ -5,6 +5,11 @@
 
 let getPrecioMostrar = (precio) => {
     // Aquí tu código.  Desde aquí:
+    if (typeof precio !== 'number'){
+      return 'no es un formato correcto';
+    } else if (typeof precio === 'number'){
+      return precio.toFixed(2) + ' €';
+    }
     // Hasta aquí
 }
 
