@@ -15,9 +15,4 @@ const testing = function (fun, inputs, output) {
     
 }
 
-<<<<<<< HEAD
 module.exports = testing;
-
-=======
-module.exports = testing;
->>>>>>> refs/remotes/origin/master
