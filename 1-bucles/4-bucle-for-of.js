@@ -6,8 +6,7 @@
 
 let gente = [{
         nombre: 'Jamiro',
-        edad: 45
-    },
+        edad: 45},
     {
         nombre: 'Juan',
         edad: 35
@@ -33,3 +32,13 @@ let gente = [{
         edad: 10
     },
 ]
+  
+  var losQuePasan = gente.filter(function(persona){
+    return persona.edad >= 25;
+  });
+  
+  var nombres = losQuePasan.map(function(persona){
+    return persona.nombre;
+  })
+  
+  console.log(nombres.join(', '));
