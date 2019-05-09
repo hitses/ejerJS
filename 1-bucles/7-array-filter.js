@@ -33,5 +33,20 @@ let gente = [{
         nombre: 'Jenny',
         edad: 10
     },
+    {
+        nombre: 'Jero',
+        edad: 28
+    },
 ]
 
+var losQuePasan = gente.filter(function(persona){
+    return persona.edad <= 40 && persona.nombre[0] == 'J';
+  });
+  
+var nombres = losQuePasan.map(function(persona){
+    if (persona.edad <= 40 && persona.nombre[0] == 'J'){
+    return persona.nombre;
+    }
+})
+
+console.log(nombres.join(' '));
