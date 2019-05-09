@@ -33,3 +33,15 @@ let gente = [{
     },
 ]
 
+
+var losQuePasan = gente.filter(function(persona){
+    return persona.nombre.length == 4;
+  });
+  
+var nombres = losQuePasan.map(function(persona){
+    if (persona.nombre.length == 4){
+    return persona.nombre;
+    }
+})
+
+console.log(nombres.join(' '));
