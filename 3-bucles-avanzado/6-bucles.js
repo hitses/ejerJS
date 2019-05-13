@@ -16,13 +16,9 @@ for (let i = 0; i < giveMeIntegerRandom(10); i++) {
 console.log('El array original es:  arr =', arr);
 // Aquí tu código
 
-var doblandoArr = arr.filter(function(numero){
-    return numero * 2;
-  });
+let doblandoArr = arr.filter((numero) => numero * 2);
   
-var dobleArr = doblandoArr.map(function(numero){
-    return numero * 2;
-})
+let dobleArr = doblandoArr.map((numero) => numero * 2);
 
 
 // Hasta aquí
