@@ -13,15 +13,18 @@
 let transformaArrayEnOtraConSusLongitudes = (arrayDeStrings) => {
     let arrayDeLongitudes = [];
     // Aquí tu código.  Desde aquí:
-
-    if(typeof arrayDeStrings === 'object' && arrayDeStrings.length >= 0){
-        for (i=0; i<arrayDeStrings.length; i++){
-            arrayDeLongitudes.push(arrayDeStrings[i].length);
-        }
-    }else{
-        return 'Debo ser ejecutada con un array';
+    console.log(typeof arrayDeStrings);
+    if(typeof array === 'object' && array.length >= 0){
+        arrayDeStrings = arrayDeLongitudes.filter(function(string){
+            return string * 2;
+        });
+        
+        nuevaArray = arrayDeStrings.map(function(string){
+            return string * 2;
+        })
+    } else {
+        return 'Debo ser ejecutada con un array'
     }
-    
     // Hasta aquí.
     return arrayDeLongitudes
 }
@@ -40,3 +43,5 @@ test(transformaArrayEnOtraConSusLongitudes, [
 test(transformaArrayEnOtraConSusLongitudes, [''], 'Debo ser ejecutada con un array');
 test(transformaArrayEnOtraConSusLongitudes, [true], 'Debo ser ejecutada con un array');
 test(transformaArrayEnOtraConSusLongitudes, [{}], 'Debo ser ejecutada con un array');
+
+/* typeof arrayDeStrings === 'boolean' || arrayDeStrings.length <= 0 */
