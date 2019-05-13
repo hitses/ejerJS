@@ -33,11 +33,11 @@ let gente = [{
     },
 ]
   
-  var losQuePasan = gente.filter(function(persona){
+  let losQuePasan = gente.filter(function(persona){
     return persona.edad >= 25;
   });
   
-  var nombres = losQuePasan.map(function(persona){
+  let nombres = losQuePasan.map(function(persona){
     return persona.nombre;
   })
   

@@ -31,14 +31,18 @@ let gente = [{
         nombre: 'Jenny',
         edad: 10
     },
+    {
+        nombre: 'Jero',
+        edad: 28
+    },
 ]
 
 
-var losQuePasan = gente.filter(function(persona){
+let losQuePasan = gente.filter(function(persona){
     return persona.nombre.length == 4;
   });
   
-var nombres = losQuePasan.map(function(persona){
+let nombres = losQuePasan.map(function(persona){
     if (persona.nombre.length == 4){
     return persona.nombre;
     }

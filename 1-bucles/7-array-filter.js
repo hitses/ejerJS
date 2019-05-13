@@ -39,11 +39,11 @@ let gente = [{
     },
 ]
 
-var losQuePasan = gente.filter(function(persona){
+let losQuePasan = gente.filter(function(persona){
     return persona.edad <= 40 && persona.nombre[0] == 'J';
   });
   
-var nombres = losQuePasan.map(function(persona){
+let nombres = losQuePasan.map(function(persona){
     if (persona.edad <= 40 && persona.nombre[0] == 'J'){
     return persona.nombre;
     }

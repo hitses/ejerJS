@@ -12,13 +12,14 @@ let gente = [
   {nombre: 'Pilar', edad: 24},
   {nombre: 'Laura', edad: 24},
   {nombre: 'Jenny', edad: 10},
+  {nombre: 'Jero', edad: 28},
 ]
 
-var losQuePasan = gente.filter(function(persona){
+let losQuePasan = gente.filter(function(persona){
     return persona.nombre[0] == 'J';
   });
   
-var nombres = losQuePasan.map(function(persona){
+let nombres = losQuePasan.map(function(persona){
     if (persona.nombre[0] == 'J'){
     return persona.nombre;
     }
